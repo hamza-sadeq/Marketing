@@ -51,6 +51,10 @@ const Works = () => {
                 backgroundBlendMode: "darken",
                 position: "relative",
                 backgroundSize: "cover",
+                transition: "all .4s ease",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
               }}
             >
               <div
@@ -76,7 +80,7 @@ const Works = () => {
                   >
                     {item.Details}
                   </Typography>
-                  <div style={{paddingTop: '20px'}}>
+                  <div style={{ paddingTop: "20px" }}>
                     <a href="#" className="caseStudy">
                       Case Study
                     </a>

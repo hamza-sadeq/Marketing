@@ -164,3 +164,29 @@
   color: #fff;
   border-color: #f9004d;
 }
+
+.funFactPage{
+  background-image: url(/public/Images/bg-image-6.jpg);
+  min-height: 60vh;
+  min-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.companiesPage{
+  background-image: url(/public/Images/bg-image-7.jpg);
+  min-height: 100vh;
+  min-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.529);
+  display: flex;
+  align-items: center;
+}
+
+.founders:hover{
+  transform: scale(1.1);
+}

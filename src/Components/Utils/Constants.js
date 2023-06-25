@@ -77,3 +77,30 @@ export const ourWorks = [
         Details: 'Getting tickets to the big show',
     }, 
 ]
+
+export const founders = [
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-1.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-2.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-3.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-4.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-5.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-6.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-7.jpg'
+    },
+    {
+        img: 'https://trydo.rainbowit.net/assets/images/client/testimonial-8.jpg'
+    },
+]
