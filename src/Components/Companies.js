@@ -12,6 +12,7 @@ const Companies = () => {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
+          paddingTop={"50px"}
         >
           <Typography
             color={"#fff"}

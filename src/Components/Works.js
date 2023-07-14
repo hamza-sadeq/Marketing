@@ -1,6 +1,7 @@
 import { Container, Box, Typography, Grid } from "@mui/material";
 import React from "react";
 import { ourWorks } from "./Utils/Constants";
+import "../App.css";
 
 const Works = () => {
   return (
@@ -38,6 +39,7 @@ const Works = () => {
         <Grid container gap={"30px"}>
           {ourWorks.map((item, i) => (
             <Grid
+              className="content"
               item
               lg={3.7}
               sm={5.7}
@@ -47,46 +49,41 @@ const Works = () => {
                 backgroundImage: `url(${item.image})`,
                 minHeight: "70vh",
                 backgroundRepeat: "no-repeat",
-                borderRadius: "10px",
+                borderRadius: "20px",
                 backgroundBlendMode: "darken",
                 position: "relative",
                 backgroundSize: "cover",
                 transition: "all .4s ease",
+                cursor: "pointer",
                 "&:hover": {
                   transform: "scale(1.05)",
                 },
               }}
             >
-              <div
-                style={{
-                  backgroundColor: "#00000052",
-                  height: "100%",
-                  width: "100%",
-                }}
-              >
-                <Box position={"absolute"} bottom={"20%"} left={"10%"}>
-                  <Typography
-                    color={"#c6c9d8"}
-                    fontSize={"14px"}
-                    fontWeight={"bold"}
-                  >
-                    {item.name}
-                  </Typography>
-                  <Typography
-                    color={"#fff"}
-                    variant="h5"
-                    fontWeight={"600"}
-                    padding={"20px 0"}
-                  >
-                    {item.Details}
-                  </Typography>
-                  <div style={{ paddingTop: "20px" }}>
-                    <a href="#" className="caseStudy">
-                      Case Study
-                    </a>
-                  </div>
-                </Box>
-              </div>
+              <div className="gradient">
+                  <Box position={"absolute"} bottom={"20%"} left={"10%"}>
+                    <Typography
+                      color={"#c6c9d8"}
+                      fontSize={"14px"}
+                      fontWeight={"bold"}
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography
+                      color={"#fff"}
+                      variant="h5"
+                      fontWeight={"600"}
+                      padding={"20px 0"}
+                    >
+                      {item.Details}
+                    </Typography>
+                    <div style={{ paddingTop: "20px" }}>
+                      <a href="#" className="caseStudy">
+                        Case Study
+                      </a>
+                    </div>
+                  </Box>
+                </div>
             </Grid>
           ))}
         </Grid>
